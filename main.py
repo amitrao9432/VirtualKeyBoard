@@ -60,7 +60,6 @@ while True:
                 l, _, _ = detector.findDistance(8, 12, img, draw=False)
                 print(l)
 
-                ## when clicked
                 if l < 30:
                     keyboard.press(button.text)
                     cv2.rectangle(img, button.pos, (x + w, y + h), (0, 255, 0), cv2.FILLED)
